@@ -25,7 +25,7 @@ chmod -c 0440 /etc/sudoers
 sed -i '/^Categories=/a Hidden=true' /usr/share/applications/gparted.desktop
 
 # Hostname (hardcoded for live ISO; users can change after installation)
-echo "archbang" > /etc/hostname
+echo "archbang-classic" > /etc/hostname
 
 # Vconsole
 echo "KEYMAP=us" > /etc/vconsole.conf
