@@ -21,7 +21,7 @@
   <margins><top>0</top><bottom>0</bottom><left>0</left><right>0</right></margins>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="W-Return"><action name="Execute"><command>lxterminal</command></action></keybind>
+    <keybind key="W-t"><action name="Execute"><command>lxterminal</command></action></keybind>
     <keybind key="W-space"><action name="Execute"><command>rofi -show drun</command></action></keybind>
     <keybind key="A-F2"><action name="Execute"><command>rofi -show run</command></action></keybind>
     <keybind key="W-w"><action name="Execute"><command>firefox</command></action></keybind>

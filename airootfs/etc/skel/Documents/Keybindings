@@ -1,6 +1,6 @@
 ArchBang Classic - Openbox keybindings
 
-Super + Return          Terminal (lxterminal)
+Super + t               Terminal (lxterminal)
 Super + Space           Launcher (rofi drun)
 Alt + F2                Run command (rofi run)
 Super + w               Firefox
