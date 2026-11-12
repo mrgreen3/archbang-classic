@@ -9,7 +9,7 @@ border_width = 0
 background_color = #f9ba72 30
 border_color = #000000 0
 
-panel_items = TSC
+panel_items = EEEETSC
 panel_monitor = all
 panel_position = bottom center horizontal
 panel_size = 100% 28
@@ -21,23 +21,16 @@ panel_dock = 0
 panel_layer = top
 strut_policy = follow_size
 
-taskbar_mode = multi_desktop
-taskbar_padding = 0 0 4
+taskbar_mode = single_desktop
+taskbar_padding = 0 0 2
 taskbar_background_id = 0
 taskbar_active_background_id = 0
-taskbar_name = 1
-taskbar_name_padding = 6 2
-taskbar_name_font = DejaVu Sans Bold 9
-taskbar_name_font_color = #c8c8c8 100
-taskbar_name_active_font_color = #f9ba72 100
-taskbar_name_background_id = 0
-taskbar_name_active_background_id = 2
-taskbar_hide_empty = 0
+taskbar_name = 0
 
 task_text = 1
 task_icon = 1
 task_centered = 0
-task_maximum_size = 180 26
+task_maximum_size = 200 26
 task_padding = 4 2 4
 task_font = DejaVu Sans 9
 task_font_color = #c8c8c8 100
@@ -56,3 +49,45 @@ time1_font = DejaVu Sans Bold 9
 clock_font_color = #f9ba72 100
 clock_padding = 6 0
 clock_background_id = 0
+
+# Desktop switcher
+execp = new
+execp_command = tint2-desktop 1
+execp_continuous = 1
+execp_markup = 1
+execp_font = DejaVu Sans Bold 9
+execp_font_color = #c8c8c8 100
+execp_padding = 2 0
+execp_background_id = 0
+execp_lclick_command = wmctrl -s 0
+
+execp = new
+execp_command = tint2-desktop 2
+execp_continuous = 1
+execp_markup = 1
+execp_font = DejaVu Sans Bold 9
+execp_font_color = #c8c8c8 100
+execp_padding = 2 0
+execp_background_id = 0
+execp_lclick_command = wmctrl -s 1
+
+execp = new
+execp_command = tint2-desktop 3
+execp_continuous = 1
+execp_markup = 1
+execp_font = DejaVu Sans Bold 9
+execp_font_color = #c8c8c8 100
+execp_padding = 2 0
+execp_background_id = 0
+execp_lclick_command = wmctrl -s 2
+
+execp = new
+execp_command = tint2-desktop 4
+execp_continuous = 1
+execp_markup = 1
+execp_font = DejaVu Sans Bold 9
+execp_font_color = #c8c8c8 100
+execp_padding = 2 0
+execp_background_id = 0
+execp_lclick_command = wmctrl -s 3
+

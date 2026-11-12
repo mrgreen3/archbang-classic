@@ -27,6 +27,8 @@ xf86-video-nouveau
 xf86-video-qxl
 openbox
 tint2
+wmctrl
+xorg-xprop
 conky
 rofi
 feh
