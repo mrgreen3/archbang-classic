@@ -34,7 +34,7 @@ rofi
 feh
 volumeicon
 network-manager-applet
-lxappearance
+lxappearance-obconf
 archlinux-xdg-menu
 dunst
 scrot
