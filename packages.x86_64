@@ -62,6 +62,7 @@ adwaita-icon-theme
 ttf-dejavu
 
 ## === SYSTEM MONITORING ===
+htop
 fastfetch
 laptop-detect
 
