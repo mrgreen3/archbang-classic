@@ -19,7 +19,7 @@ panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
 panel_layer = top
-strut_policy = follow_size
+strut_policy = none
 
 taskbar_mode = single_desktop
 taskbar_padding = 0 0 2

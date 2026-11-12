@@ -18,7 +18,7 @@
     <names><name>1</name><name>2</name><name>3</name><name>4</name></names>
     <popupTime>500</popupTime>
   </desktops>
-  <margins><top>5</top><bottom>5</bottom><left>5</left><right>5</right></margins>
+  <margins><top>5</top><bottom>33</bottom><left>5</left><right>5</right></margins>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="W-t"><action name="Execute"><command>lxterminal</command></action></keybind>
