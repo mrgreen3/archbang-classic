@@ -1,7 +1,7 @@
 todo
 .venv-test/
-out/
-work/
+/out/
+/work/
 docs/
 __pycache__/
 *.pyc
