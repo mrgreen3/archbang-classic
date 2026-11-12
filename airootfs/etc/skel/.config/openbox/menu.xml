@@ -8,6 +8,7 @@
   <item label="Power Off"><action name="Execute"><command>systemctl poweroff</command></action></item>
 </menu>
 <menu id="root-menu" label="ArchBang">
+  <separator label="ArchBang" />
   <item label="Terminal"><action name="Execute"><command>lxterminal</command></action></item>
   <item label="Web Browser"><action name="Execute"><command>firefox</command></action></item>
   <item label="File Manager"><action name="Execute"><command>thunar</command></action></item>
