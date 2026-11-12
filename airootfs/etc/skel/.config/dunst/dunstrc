@@ -1,0 +1,31 @@
+[global]
+    origin = top-left
+    offset = 10x10
+    width = 300
+    frame_width = 1
+    frame_color = "#e0952a"
+    separator_color = frame
+    corner_radius = 0
+    padding = 8
+    horizontal_padding = 10
+    font = DejaVu Sans 9
+    markup = full
+    format = "%s\n%b"
+    icon_position = left
+    max_icon_size = 32
+
+[urgency_low]
+    background = "#1c1c1c"
+    foreground = "#d8d8d8"
+    timeout = 4
+
+[urgency_normal]
+    background = "#1c1c1c"
+    foreground = "#d8d8d8"
+    timeout = 6
+
+[urgency_critical]
+    background = "#1c1c1c"
+    foreground = "#ffffff"
+    frame_color = "#d75f5f"
+    timeout = 0
