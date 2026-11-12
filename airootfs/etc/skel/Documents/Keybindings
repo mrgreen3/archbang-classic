@@ -1,0 +1,23 @@
+ArchBang Classic - Openbox keybindings
+
+Super + Return          Terminal (lxterminal)
+Super + Space           Launcher (rofi drun)
+Alt + F2                Run command (rofi run)
+Super + w               Firefox
+Super + e               File manager (thunar)
+Super + m               Openbox menu
+Super + l               Lock screen (slock)
+Super + q / Alt + F4    Close window
+Super + f               Toggle maximize
+Super + d               Show desktop
+Super + Left / Right    Snap window to half screen
+Super + 1-4             Switch desktop
+Super + Shift + 1-4     Send window to desktop
+Alt + Tab               Cycle windows
+Print                   Screenshot to ~/
+
+Mouse
+Right-click desktop     Openbox menu
+Middle-click desktop    Window list
+Alt + drag              Move window
+Alt + right-drag        Resize window

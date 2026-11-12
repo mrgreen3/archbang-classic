@@ -1,0 +1,8 @@
+todo
+.venv-test/
+out/
+work/
+docs/
+__pycache__/
+*.pyc
+.claude/

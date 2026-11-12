@@ -1,0 +1,144 @@
+ ArchBang Guide
+
+Welcome to ArchBang, a lightweight Arch-based Wayland live ISO built around MangoWC.
+
+Note: Do not post ArchBang issues on the Arch Linux forums.
+
+---
+
+PACMAN (LIVE SESSION)
+
+Network required for pacman or browser use in the live session.
+
+- Wired connections work automatically.
+- Wireless: press Super+S (noctalia control-center) > Network, select a network, enter the password.
+
+---
+
+TAGS AND LAYOUTS
+
+MangoWC uses tags (1–9) instead of workspaces.
+
+Tag 1 is tiling — one window fills the screen, more windows split it.
+Tag 2 is floating — windows behave like a traditional floating desktop.
+Tag 3 is scroller — windows open full width side by side; Super+X cycles widths.
+Tag 4 is monocle — one window at a time, full screen.
+Tags 5–9 are tiling.
+
+Switch tags with Super+1 through Super+9.
+Toggle a window between floating and tiling with Super+Ctrl+S.
+Change the current tag's layout with Super+N.
+
+Focus follows clicks: click a window to focus it and bring it to the front.
+
+Super+K shows all keybindings.
+
+---
+
+INSTALLATION
+
+1. Press Super+I, or Super+Space (noctalia launcher), type "install", choose "Install ArchBang"
+2. Or run it from a terminal: sudo ~/Scripts/abinstall
+
+The installer (abinstall) is menu-driven.
+
+Super+Return opens a terminal.
+
+---
+
+POST-INSTALLATION
+
+SUDO
+
+Installed system requires password for sudo. Live session used passwordless sudo
+for convenience — installed system does not.
+
+---
+
+INITIALIZE PACMAN
+
+pacman will not work until keys are initialized:
+
+fix-keys
+
+This creates keys, refreshes the package cache, and updates archlinux-keyring.
+
+---
+
+BASIC PACKAGE USAGE
+
+Search:   sudo pacman -Ss <package-name>
+Install:  sudo pacman -S <package-name>
+
+---
+
+OPENCODE (AI CODING AGENT)
+
+OpenCode is an AI coding assistant, launched from the launcher
+(Super+Space > Apps > oc-install).
+It is NOT included on the ISO image. On first launch, if you are online, the
+launcher installs it automatically (sudo pacman -S opencode). It is about a
+170 MB download, so allow a moment the first time; the terminal shows a
+message making that clear while it installs.
+
+- Requires network on first run. If you are offline it won't install, and
+  it will tell you to run:  sudo pacman -S opencode
+- After the first install it launches like any other app.
+
+---
+
+CONSOLE KEYBOARD LAYOUT
+
+The installer sets the raw tty console (rescue mode, before mango starts) to
+a "us" keymap regardless of your location — only mango's own desktop keymap
+is set to match where you are. To change the console layout afterwards:
+
+sudo nano /etc/vconsole.conf   # set KEYMAP=<layout>, e.g. KEYMAP=uk
+sudo mkinitcpio -P             # regenerate initramfs to pick it up
+
+List available layouts with: localectl list-keymaps
+
+---
+
+MICROCODE
+
+ArchBang includes both intel-ucode and amd-ucode. You only need one.
+
+If you remove the unused one after installation, update your bootloader config
+(regenerate GRUB or edit loader.conf) before rebooting.
+
+---
+
+INTEL GRAPHICS
+
+ArchBang uses Wayland with MangoWC, which relies on kernel modesetting via Mesa.
+No additional Intel drivers needed — built-in kernel drivers handle acceleration.
+
+---
+
+BROADCOM WIFI
+
+Some older Broadcom wireless chips need the proprietary broadcom-wl driver
+instead of the in-kernel b43/brcmsmac/brcmfmac drivers. This package has been
+dropped from Arch repos before and later reappeared, and is not currently in
+the AUR either. If your wifi chip needs it, check the AUR and Arch wiki
+(Broadcom wireless) for current availability before assuming it's missing
+permanently.
+
+---
+
+LIVE SESSION DISK SPACE
+
+If the live session runs out of space:
+
+sudo mount -o remount,size=8G /run/archiso/cowspace
+
+---
+
+NEED HELP?
+
+Arch Wiki: https://wiki.archlinux.org
+
+---
+
+Copyright 2025 ArchBang

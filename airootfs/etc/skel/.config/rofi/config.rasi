@@ -1,0 +1,6 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    font: "DejaVu Sans 11";
+}
+@theme "Arc-Dark"

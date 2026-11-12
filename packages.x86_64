@@ -1,0 +1,167 @@
+## === AUDIO ===
+pipewire
+pipewire-pulse
+wireplumber
+pipewire-alsa
+sound-theme-freedesktop
+
+## === ARCHIVE TOOLS ===
+zip
+unzip
+7zip
+xz
+
+## === TERMINAL ===
+lxterminal
+
+## === X11 DESKTOP (openbox stack) ===
+xorg-server
+xorg-xinit
+xorg-xrandr
+xorg-xsetroot
+xf86-video-vesa
+xf86-video-fbdev
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-nouveau
+xf86-video-qxl
+openbox
+obconf
+tint2
+rofi
+feh
+volumeicon
+network-manager-applet
+lxappearance
+dunst
+scrot
+xclip
+xss-lock
+slock
+brightnessctl
+reflector
+
+## === FILE MANAGER & UTILITIES ===
+thunar
+thunar-volman
+tumbler
+gvfs
+udisks2
+
+## === TEXT EDITORS ===
+vim
+l3afpad
+
+## === THEMES & FONTS ===
+adw-gtk-theme
+adwaita-icon-theme
+ttf-jetbrains-mono
+ttf-nerd-fonts-symbols-mono
+ttf-dejavu
+
+## === SYSTEM MONITORING ===
+fastfetch
+laptop-detect
+
+## === DISK & PARTITION TOOLS ===
+gparted
+parted
+gptfdisk
+ddrescue
+testdisk
+ntfs-3g
+
+## === NETWORK MANAGEMENT ===
+networkmanager
+usb_modeswitch
+# Will not ship broadcom-wl-dkms in the live ISO...for now....
+#broadcom-wl-dkms
+
+## === DESKTOP UTILITIES ===
+polkit
+libsecret
+xdg-user-dirs
+
+## === SYSTEM TOOLS ===
+dialog
+sudo
+fontconfig
+kbd
+
+## === COMMAND-LINE TOOLS ===
+openssh
+arch-install-scripts
+curl
+pacman-contrib
+fzf
+eza
+jq
+
+## === MEDIA APPLICATIONS ===
+firefox
+viewnior
+
+## === BUILD & DEVELOPMENT TOOLS ===
+squashfs-tools
+rsync
+pv
+dosfstools
+btrfs-progs
+
+## === BOOTLOADER & FIRMWARE ===
+grub
+os-prober
+lsb-release
+syslinux
+intel-ucode
+amd-ucode
+
+## === CORE SYSTEM PACKAGES (Arch Linux base) ===
+## Essential packages required for system operation
+bash
+bzip2
+coreutils
+cryptsetup
+device-mapper
+diffutils
+e2fsprogs
+file
+filesystem
+findutils
+gawk
+gcc-libs
+gettext
+glibc
+grep
+gzip
+inetutils
+iproute2
+iputils
+less
+licenses
+linux
+linux-firmware
+logrotate
+lvm2
+man-db
+man-pages
+nano
+ex-vi-compat
+pacman
+pciutils
+perl
+procps-ng
+psmisc
+sed
+shadow
+sysfsutils
+systemd-sysvcompat
+tar
+usbutils
+util-linux
+which
+memtest86+
+mkinitcpio
+mkinitcpio-archiso
+archlinux-keyring
+
