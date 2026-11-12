@@ -1,0 +1,12 @@
+ArchBang Classic - Guide
+
+Screen margins and the panel
+
+Openbox keeps a 5px gap around windows (~/.config/openbox/rc.xml,
+<margins>). tint2 reserves no space of its own (strut_policy = none in
+~/.config/tint2/tint2rc), so the bottom margin covers the panel too:
+
+    bottom margin = panel height + 5    (28 + 5 = 33)
+
+If you change panel_size in tint2rc, update <bottom> to match, then
+run: openbox --reconfigure
