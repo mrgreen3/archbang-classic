@@ -46,7 +46,7 @@ systray_icon_size = 18
 
 time1_format = %H:%M
 time1_font = DejaVu Sans 9
-clock_font_color = #f9ba72 100
+clock_font_color = #ffffff 100
 clock_padding = 6 0
 clock_background_id = 0
 
