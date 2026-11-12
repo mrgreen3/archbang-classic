@@ -1,6 +1,6 @@
 # add vim as default editor
 export EDITOR=vim
-export TERMINAL=foot
+export TERMINAL=lxterminal
 export BROWSER=firefox
 
 # Add scripts path safely
