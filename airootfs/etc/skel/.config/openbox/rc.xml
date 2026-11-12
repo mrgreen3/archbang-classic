@@ -3,12 +3,12 @@
   <focus><focusNew>yes</focusNew><followMouse>no</followMouse></focus>
   <placement><policy>Smart</policy><center>yes</center></placement>
   <theme>
-    <name>ArchBang-Classic</name>
+    <name>Onyx-Citrus</name>
     <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
-    <font place="ActiveWindow"><name>DejaVu Sans</name><size>9</size><weight>Bold</weight></font>
-    <font place="InactiveWindow"><name>DejaVu Sans</name><size>9</size><weight>Bold</weight></font>
+    <font place="ActiveWindow"><name>DejaVu Sans</name><size>9</size><weight>Normal</weight></font>
+    <font place="InactiveWindow"><name>DejaVu Sans</name><size>9</size><weight>Normal</weight></font>
     <font place="MenuHeader"><name>DejaVu Sans</name><size>9</size></font>
     <font place="MenuItem"><name>DejaVu Sans</name><size>9</size></font>
   </theme>
