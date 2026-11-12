@@ -1,5 +1,6 @@
 feh --no-fehbg --bg-fill ~/Backgrounds/golden-larch.jpg &
 tint2 &
+conky &
 nm-applet &
 volumeicon &
 dunst &
