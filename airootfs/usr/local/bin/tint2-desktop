@@ -4,7 +4,7 @@ n=$1
 xprop -root -spy _NET_CURRENT_DESKTOP | while read -r line; do
     cur=$(( ${line##* } + 1 ))
     if [ "$cur" -eq "$n" ]; then
-        echo "<span foreground='#1c1c1c' background='#f9ba72' weight='bold'> $n </span>"
+        echo "<span foreground='#1c1c1c' background='#f9ba72'> $n </span>"
     else
         echo " $n "
     fi
