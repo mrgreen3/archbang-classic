@@ -22,5 +22,6 @@ file_permissions=(
   ["/root/.gnupg"]="0:0:700"
   ["/etc/skel/Scripts/"]="0:0:755"
   ["/usr/local/bin/tint2-desktop"]="0:0:755"
+  ["/usr/local/bin/xterm"]="0:0:755"
 )
 #bootstrap_tarball_compression=(gzip -cn9)

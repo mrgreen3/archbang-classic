@@ -1,0 +1,4 @@
+#!/bin/sh
+# xdg_menu launches terminal apps with "xterm -e"; hand them to lxterminal
+[ "$1" = "-e" ] && shift
+exec lxterminal -e "$*"

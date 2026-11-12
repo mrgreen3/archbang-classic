@@ -21,8 +21,11 @@ chmod -c 0440 /etc/sudoers
 # Configure gparted to run with sudo for elevated permissions
 #sed -i 's|^Exec=/usr/bin/gparted|Exec=sudo /usr/bin/gparted|' /usr/share/applications/gparted.desktop
 
-# Hide gparted from application menu
-sed -i '/^Categories=/a Hidden=true' /usr/share/applications/gparted.desktop
+# Hide gparted and panel/test clutter from the application menu
+for d in gparted conky tint2 volumeicon qv4l2 qvidcap; do
+  f=/usr/share/applications/$d.desktop
+  if [[ -f $f ]]; then sed -i '/^\[Desktop Entry\]/a NoDisplay=true' "$f"; fi
+done
 
 # Hostname (hardcoded for live ISO; users can change after installation)
 echo "archbang-classic" > /etc/hostname
