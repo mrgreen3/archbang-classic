@@ -1,0 +1,77 @@
+* {
+    bg:       #1c1c1c;
+    bg-alt:   #2a2a2a;
+    fg:       #d8d8d8;
+    fg-dim:   #8a8a8a;
+    accent:   #e0952a;
+    on-accent:#1c1c1c;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "DejaVu Sans 10";
+}
+
+window {
+    width:            480px;
+    background-color: @bg;
+    border:           1px;
+    border-color:     @accent;
+    border-radius:    0;
+}
+
+mainbox {
+    padding:  10px;
+    spacing:  8px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    padding:          6px 8px;
+    background-color: @bg-alt;
+    spacing:          6px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    placeholder:       "Search…";
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    lines:     8;
+    columns:   1;
+    spacing:   2px;
+    scrollbar: false;
+    fixed-height: true;
+}
+
+element {
+    padding:  5px 8px;
+    spacing:  8px;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color:       @on-accent;
+}
+
+element-icon {
+    size: 18px;
+    background-color: inherit;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}

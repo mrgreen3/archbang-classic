@@ -22,7 +22,7 @@ chmod -c 0440 /etc/sudoers
 #sed -i 's|^Exec=/usr/bin/gparted|Exec=sudo /usr/bin/gparted|' /usr/share/applications/gparted.desktop
 
 # Hide gparted and panel/test clutter from the application menu
-for d in gparted conky tint2 volumeicon qv4l2 qvidcap; do
+for d in gparted conky tint2 volumeicon qv4l2 qvidcap xfce4-about; do
   f=/usr/share/applications/$d.desktop
   if [[ -f $f ]]; then sed -i '/^\[Desktop Entry\]/a NoDisplay=true' "$f"; fi
 done

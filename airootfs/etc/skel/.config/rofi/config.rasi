@@ -1,6 +1,6 @@
 configuration {
     modi: "drun,run,window";
     show-icons: true;
-    font: "DejaVu Sans 11";
+    font: "DejaVu Sans 10";
 }
-@theme "Arc-Dark"
+@theme "~/.config/rofi/archbang-classic.rasi"
