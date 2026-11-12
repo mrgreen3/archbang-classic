@@ -33,6 +33,7 @@ conky
 rofi
 feh
 volumeicon
+cbatticon
 network-manager-applet
 lxappearance-obconf
 archlinux-xdg-menu

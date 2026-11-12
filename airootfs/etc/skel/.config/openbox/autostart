@@ -3,6 +3,7 @@ tint2 &
 conky &
 nm-applet &
 volumeicon &
+ls /sys/class/power_supply/BAT* >/dev/null 2>&1 && cbatticon &
 dunst &
 thunar --daemon &
 xss-lock -- slock &
