@@ -10,7 +10,6 @@
   <menu id="sys-menu" label="System">
     <item label="GParted"><action name="Execute"><command>sudo -E gparted</command></action></item>
     <item label="Appearance"><action name="Execute"><command>lxappearance</command></action></item>
-    <item label="Openbox Settings"><action name="Execute"><command>obconf</command></action></item>
     <item label="Edit Menu"><action name="Execute"><command>l3afpad ~/.config/openbox/menu.xml</command></action></item>
     <item label="Edit Autostart"><action name="Execute"><command>l3afpad ~/.config/openbox/autostart</command></action></item>
     <item label="Reconfigure"><action name="Reconfigure" /></item>

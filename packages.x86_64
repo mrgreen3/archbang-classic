@@ -26,7 +26,6 @@ xf86-video-ati
 xf86-video-nouveau
 xf86-video-qxl
 openbox
-obconf
 tint2
 rofi
 feh
