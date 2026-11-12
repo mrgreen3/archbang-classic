@@ -3,7 +3,7 @@
   <focus><focusNew>yes</focusNew><followMouse>no</followMouse></focus>
   <placement><policy>Smart</policy><center>yes</center></placement>
   <theme>
-    <name>Onyx-Citrus</name>
+    <name>ArchBang-Classic</name>
     <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
