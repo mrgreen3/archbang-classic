@@ -11,6 +11,7 @@
     font = DejaVu Sans 9
     markup = full
     format = "%s\n%b"
+    show_indicators = no
     icon_position = left
     max_icon_size = 32
 
