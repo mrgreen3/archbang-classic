@@ -10,7 +10,8 @@ iso_application="ArchBang Classic Live Iso"
 iso_version="$(date +%d%m%y)"
 install_dir="arch"
 buildmodes=("iso")
-bootmodes=('bios.syslinux')
+bootmodes=('bios.syslinux'
+           'uefi.systemd-boot')
 arch="x86_64"
 pacman_conf="pacman.conf"
 airootfs_image_type="squashfs"

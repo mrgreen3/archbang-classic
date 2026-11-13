@@ -164,6 +164,7 @@ usbutils
 util-linux
 which
 memtest86+
+memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 archlinux-keyring
