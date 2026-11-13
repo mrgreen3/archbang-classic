@@ -1,0 +1,16 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = gparted
+Target = conky
+Target = tint2
+Target = volumeicon
+Target = v4l-utils
+Target = libxfce4ui
+
+[Action]
+Description = Hiding clutter from the application menu...
+When = PostTransaction
+Exec = /bin/sh -c 'for d in gparted conky tint2 volumeicon qv4l2 qvidcap xfce4-about; do f=/usr/share/applications/$d.desktop; [ -f "$f" ] && sed -i "/^\[Desktop Entry\]/a NoDisplay=true" "$f"; done; true'
